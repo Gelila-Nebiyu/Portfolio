@@ -9,12 +9,12 @@ const Experience: React.FC = () => {
       <div className="flex items-center gap-4 mb-12">
         <span className="text-primary font-mono text-xl">02.</span>
         <h2 className="text-3xl font-bold text-text">Where I've Worked</h2>
-        <div className="h-px bg-red-100 flex-grow max-w-xs"></div>
+        <div className="h-px bg-surface-dark flex-grow max-w-xs"></div>
       </div>
 
       <div className="flex flex-col md:flex-row gap-8">
         {/* Tabs */}
-        <div className="flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l border-red-100 min-w-max">
+        <div className="flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l border-surface-dark min-w-max">
           {EXPERIENCE.map((job, idx) => (
             <button
               key={idx}

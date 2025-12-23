@@ -10,7 +10,7 @@ import ChatWidget from './components/ChatWidget';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen text-text selection:bg-red-100 selection:text-primary-hover">
+    <div className="bg-white min-h-screen text-text selection:bg-surface-dark selection:text-primary">
       <Navbar />
       
       <main className="flex flex-col">
@@ -20,24 +20,25 @@ const App: React.FC = () => {
           <div className="flex items-center gap-4 mb-8">
             <span className="text-primary font-mono text-xl">01.</span>
             <h2 className="text-3xl font-bold text-text">About Me</h2>
-            <div className="h-px bg-red-100 flex-grow max-w-xs"></div>
+            <div className="h-px bg-surface-dark flex-grow max-w-xs"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2 space-y-4 text-text-light leading-relaxed">
               <p>
-                Hello! My name is Gelila and I enjoy creating things that live on the internet. My interest in web development started back in 2018 when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS was pretty fun!
+                Hello! My name is Gelila Nebiyu. I am currently a 5th-year Software Engineering student at <span className="text-primary font-medium">Addis Ababa Science and Technology University</span>. My journey into technology is driven by a curiosity to solve local problems using advanced digital tools.
               </p>
               <p>
-                Fast-forward to today, and I've had the privilege of working at an <span className="text-primary font-medium">advertising agency</span>, a <span className="text-primary font-medium">start-up</span>, and a <span className="text-primary font-medium">huge corporation</span>.
+                I recently completed an intensive AI internship where I worked on <span className="text-primary font-medium">Optical Character Recognition (OCR)</span>, bridging the gap between physical documents and digital intelligence.
               </p>
+              <p>Beyond coding, I am an innovator recognized by the <span className="text-primary font-medium">Women Startup Founders Program</span>, where I am developing Alora—a vision for sustainable fashion e-commerce.</p>
               <p>Here are a few technologies I've been working with recently:</p>
               <ul className="grid grid-cols-2 gap-2 font-mono text-sm">
-                <li className="flex items-center gap-2"><span className="text-primary">▹</span> JavaScript (ES6+)</li>
-                <li className="flex items-center gap-2"><span className="text-primary">▹</span> TypeScript</li>
-                <li className="flex items-center gap-2"><span className="text-primary">▹</span> React</li>
-                <li className="flex items-center gap-2"><span className="text-primary">▹</span> Node.js</li>
-                <li className="flex items-center gap-2"><span className="text-primary">▹</span> Python</li>
-                <li className="flex items-center gap-2"><span className="text-primary">▹</span> AWS</li>
+                <li className="flex items-center gap-2"><span className="text-primary">▹</span> Python (AI/ML)</li>
+                <li className="flex items-center gap-2"><span className="text-primary">▹</span> JavaScript (Node.js/React)</li>
+                <li className="flex items-center gap-2"><span className="text-primary">▹</span> OpenCV & YOLO</li>
+                <li className="flex items-center gap-2"><span className="text-primary">▹</span> UI/UX Design</li>
+                <li className="flex items-center gap-2"><span className="text-primary">▹</span> C++ / PHP</li>
+                <li className="flex items-center gap-2"><span className="text-primary">▹</span> Software Testing</li>
               </ul>
             </div>
             <div className="relative group">

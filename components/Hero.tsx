@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, FileText, Github, Linkedin } from 'lucide-react';
+import { ArrowRight, FileText, Github, Linkedin, MapPin } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
 const Hero: React.FC = () => {
@@ -15,17 +15,22 @@ const Hero: React.FC = () => {
         </h1>
         
         <h2 className="text-4xl md:text-6xl font-bold text-text-light/60 animate-fade-in-up" style={{animationDelay: '300ms'}}>
-          I build things for the web.
+          I build AI and web solutions.
         </h2>
         
         <p className="max-w-xl text-lg text-text-light mt-6 leading-relaxed animate-fade-in-up" style={{animationDelay: '400ms'}}>
           {PERSONAL_INFO.about}
         </p>
 
+        <div className="flex items-center gap-2 text-text-light/80 font-mono text-sm animate-fade-in-up" style={{animationDelay: '450ms'}}>
+          <MapPin size={16} className="text-primary" />
+          {PERSONAL_INFO.location}
+        </div>
+
         <div className="flex flex-wrap gap-4 pt-8 animate-fade-in-up" style={{animationDelay: '500ms'}}>
           <a 
             href="#projects"
-            className="px-6 py-4 rounded-lg bg-primary text-white font-mono hover:bg-primary-hover transition-all duration-300 flex items-center gap-2 group shadow-lg shadow-red-200"
+            className="px-6 py-4 rounded-lg bg-primary text-white font-mono hover:bg-primary-hover transition-all duration-300 flex items-center gap-2 group shadow-lg shadow-surface-dark"
           >
             Check out my work
             <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />

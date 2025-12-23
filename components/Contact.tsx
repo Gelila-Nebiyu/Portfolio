@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-red-50">
+      <div className="grid md:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-surface">
         {/* Contact Info */}
         <div className="space-y-8">
           <h3 className="text-2xl font-bold text-text">Let's talk about everything!</h3>
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-surface border border-red-100 focus:border-primary focus:ring-2 focus:ring-red-100 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg bg-surface border border-surface-dark focus:border-primary focus:ring-2 focus:ring-surface-dark outline-none transition-all"
                 placeholder="John Doe"
               />
             </div>
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-surface border border-red-100 focus:border-primary focus:ring-2 focus:ring-red-100 outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg bg-surface border border-surface-dark focus:border-primary focus:ring-2 focus:ring-surface-dark outline-none transition-all"
                 placeholder="john@example.com"
               />
             </div>
@@ -104,7 +104,7 @@ const Contact: React.FC = () => {
               required
               value={formData.subject}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-surface border border-red-100 focus:border-primary focus:ring-2 focus:ring-red-100 outline-none transition-all"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-surface-dark focus:border-primary focus:ring-2 focus:ring-surface-dark outline-none transition-all"
               placeholder="Project Inquiry"
             />
           </div>
@@ -118,14 +118,14 @@ const Contact: React.FC = () => {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-surface border border-red-100 focus:border-primary focus:ring-2 focus:ring-red-100 outline-none transition-all resize-none"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-surface-dark focus:border-primary focus:ring-2 focus:ring-surface-dark outline-none transition-all resize-none"
               placeholder="Hello, I'd like to talk about..."
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary-hover transition-all flex items-center justify-center gap-2 shadow-lg shadow-red-200"
+            className="w-full py-4 bg-primary text-white rounded-lg font-bold hover:bg-primary-hover transition-all flex items-center justify-center gap-2 shadow-lg shadow-surface-dark"
           >
             {status === 'success' ? 'Opening Email Client...' : 'Send Message'}
             <Send size={18} />
