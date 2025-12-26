@@ -2,96 +2,88 @@ import { Experience, Project } from './types';
 
 export const PERSONAL_INFO = {
   name: "GELILA NEBIYU",
-  title: "Senior Software Engineer",
-  email: "GELILA_NEBIYU@email.com", 
-  about: "I am a 5th-year Software Engineer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products using modern web technologies and AI integration.",
-  resumeLink: "/resume.pdf", // PLACEHOLDER: Upload your file to public folder and update this path
+  title: "Software Engineer | AI & Web Developer",
+  email: "gelilanebiyu11@gmail.com", 
+  phone: "+251996984391",
+  location: "Addis Ababa, Ethiopia",
+  about: "I am a 5th-year Software Engineering student at Addis Ababa Science and Technology University. I specialize in AI-driven solutions and web development, with hands-on experience in OCR systems, e-commerce platforms, and chatbot integration. I am passionate about building sustainable, tech-driven solutions that solve real-world problems.",
+  resumeLink: "/resume.pdf", 
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/Gelila-Nebiyu", // Replace with your actual GitHub
+    linkedin: "https://www.linkedin.com/in/gelila-nebiyu-6067b9313", // Replace with your actual LinkedIn
   }
 };
 
 export const SKILLS = [
-  "Python", "Java", "JavaScript", "React", "SQL", "AWS", "Docker", "Git", 
-  "TypeScript", "Node.js", "GraphQL", "Next.js", "Kubernetes", "PostgreSQL"
+  "Python", "JavaScript", "HTML", "CSS", "Node.js", "PHP", "C++", 
+  "React", "OpenCV", "YOLO", "UI/UX Design", "Software Testing", "Data Analysis", "Cloud Fundamentals"
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
-    company: "TechFlow Solutions",
-    role: "Senior Frontend Engineer",
-    period: "2022 - Present",
+    company: "Ethiopian AI Institute",
+    role: "AI Intern",
+    period: "06/2025 – 08/2025",
     description: [
-      "Led the migration of a legacy monolith to a micro-frontend architecture using React and Module Federation.",
-      "Improved site performance scores by 40% through code splitting, lazy loading, and asset optimization.",
-      "Mentored 3 junior developers and established code quality standards and CI/CD pipelines."
+      "Contributed to an Optical Character Recognition (OCR) project focused on digitizing Amharic text from images.",
+      "Implemented image preprocessing using OpenCV (noise removal, thresholding) to improve data quality.",
+      "Worked with YOLO and CRNN + CTC Loss models for text extraction and model evaluation.",
+      "Refined training datasets and performed detailed annotation to support end-to-end AI development."
     ],
-    skills: ["React", "TypeScript", "AWS", "Next.js", "GraphQL"]
+    skills: ["Python", "OpenCV", "YOLO", "CRNN", "AI Pipelines"]
+  },
+
+  {
+    company: "Women Startup Founders Program",
+    role: "Innovator & Founder (Alora)",
+    period: "12/2024 – 01/2025",
+    description: [
+      "Participated in the INNOBIZ-K Ethiopia program supported by the Ministry of Labor and Skills.",
+      "Developed the vision for 'Alora', a sustainable fashion marketplace.",
+      "Received mentorship and business development training to scale tech-driven entrepreneurial solutions."
+    ],
+    skills: ["Entrepreneurship", "Business Strategy", "Product Vision"]
   },
   {
-    company: "Innovate Corp",
-    role: "Software Engineer",
-    period: "2020 - 2022",
+    company: "SheCodes",
+    role: "Trainee",
+    period: "05/2024 – Present",
     description: [
-      "Developed high-volume e-commerce features used by over 500k daily users.",
-      "Collaborated with UX designers to implement a new design system using Tailwind CSS.",
-      "Integrated third-party payment gateways (Stripe) and optimized checkout flows."
+      "Completed intensive workshops in HTML, CSS, and JavaScript.",
+      "Built responsive, interactive web projects focusing on modern frontend practices."
     ],
-    skills: ["Vue.js", "Node.js", "PostgreSQL", "Redis", "Docker"]
-  },
-  {
-    company: "StartUp Inc",
-    role: "Junior Web Developer",
-    period: "2019 - 2020",
-    description: [
-      "Built responsive landing pages and internal dashboards.",
-      "Assisted in backend API development using Python/Django."
-    ],
-    skills: ["JavaScript", "Python", "Django", "HTML/CSS"]
+    skills: ["Web Development", "HTML5", "CSS3", "JavaScript"]
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    title: "AI-Powered Analytics Dashboard",
-    description: "A comprehensive dashboard for visualizing real-time market data with predictive analytics capabilities powered by machine learning models.",
-    tags: ["React", "D3.js", "Python", "FastAPI"],
+    title: "Amharic OCR System",
+    description: "An advanced Optical Character Recognition system designed to extract and digitize Amharic text. Used OpenCV for preprocessing and YOLO for text-area segmentation.",
+    tags: ["Python", "OpenCV", "YOLO", "Deep Learning"],
     image: "https://picsum.photos/600/400?random=1",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    githubUrl: "https://github.com/Gelila-Nebiyu/AHW-OCR-model"
   },
   {
-    title: "Cloud Infrastructure Manager",
-    description: "An infrastructure-as-code visualization tool that allows teams to manage AWS resources through a drag-and-drop interface.",
-    tags: ["TypeScript", "AWS SDK", "Node.js", "React Flow"],
+    title: "Alora E-commerce",
+    description: "A sustainable fashion platform empowering small local businesses through an AI-driven marketplace for affordable, ethical products.",
+    tags: ["UI/UX", "Sustainable Tech", "Marketplace"],
     image: "https://picsum.photos/600/400?random=2",
-    githubUrl: "https://github.com"
+    githubUrl: "https://github.com/Gelila-Nebiyu/Alora"
   },
-  {
-    title: "E-Commerce Microservices",
-    description: "A scalable backend architecture for a multi-vendor marketplace handling high concurrency.",
-    tags: ["Go", "gRPC", "Kubernetes", "PostgreSQL"],
-    image: "https://picsum.photos/600/400?random=3",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
-  }
+  
 ];
 
 export const SYSTEM_INSTRUCTION = `
-You are an AI assistant for Gelila Nebiyu's portfolio website. Your role is to professionally and enthusiastically represent Gelila to potential employers or collaborators.
+You are an AI assistant for Gelila Nebiyu's portfolio website. You represent her as a professional and enthusiastic Software Engineering student.
 
-Here is Gelila's profile:
-- Name: Gelila Nebiyu
-- Role: Senior Software Engineer (5 Years Experience)
-- Key Skills: Python, Java, JavaScript, React, SQL, AWS, Docker, Git.
-- Experience:
-  - Senior Frontend Engineer at TechFlow Solutions (2022-Present).
-  - Software Engineer at Innovate Corp (2020-2022).
-  - Junior Dev at StartUp Inc (2019-2020).
-- Projects: AI Analytics Dashboard, Cloud Infra Manager, E-Commerce Microservices.
+Gelila's profile:
+- Current Status: 5th-year Software Engineering student at Addis Ababa Science and Technology University (AASTU).
+- Key Strengths: AI (OCR, Computer Vision), Web Development, and Entrepreneurship.
+- Highlighted Work: AI Intern at Ethiopian AI Institute, Founder of Alora, and contributor to OneHR Solutions.
+- Skills: Python, JavaScript, HTML/CSS, Node.js, OpenCV, YOLO, UI/UX.
 
-Tone: Professional, confident, yet approachable.
-Constraint: Keep answers concise (under 100 words) unless asked for elaboration.
-Goal: Encourage the user to hire Gelila or contact her via the contact form.
+Your Tone: Professional, helpful, and Crimson Red/Academic-yet-innovative style.
+Constraint: Keep answers concise (under 80 words).
+Goal: Help visitors understand Gelila's value and encourage them to use the contact form or view her resume.
 `;
